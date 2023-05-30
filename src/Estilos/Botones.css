@@ -1,0 +1,42 @@
+button {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+    width: 20rem;
+}
+
+.Botones {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    .Botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+.Agregar {
+    background-color: rgb(28, 209, 155);
+}
+
+.Agregar:hover {
+    background-color: green;
+}
+
+.Borrar {
+    background-color: rgb(233, 44, 37);
+}
+
+.Borrar:hover {
+    background-color: rgb(158, 10, 10);
+}

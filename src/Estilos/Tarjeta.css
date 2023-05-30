@@ -1,0 +1,64 @@
+.Tarjeta {
+    width: 35rem;
+    height: 45rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    border: 2px solid rgb(22, 25, 26);
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 4px black;
+    cursor: pointer;
+  }
+
+  
+  .Texto-superior {
+    background-color: #2f80ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+
+  
+  .Datos-texto {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 500px) {
+    .Datos-texto{
+      font-size: 1.5rem;
+    }
+  }
+
+  h1 {
+    color: black;
+  }
+  
+  .Texto-inferior {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 3rem;
+    overflow: auto;
+  }
+
+  @media screen and (max-width: 500px) {
+    .Texto-inferior {
+      font-size: 2rem;
+    }
+  }
+
+  span {
+    color: rgb(140, 196, 248);
+    font-weight: bold;
+  }
+
+  .Tarjeta.seleccionada {
+    opacity: 0.6;
+  }
+  
